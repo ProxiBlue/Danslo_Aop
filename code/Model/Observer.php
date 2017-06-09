@@ -63,10 +63,10 @@ class Danslo_Aop_Model_Observer
 
                 // While this may seem counterintuitive, we don't need go-aop to do
                 // autoloading for us, as we register our own autoloader.
-                Mage::getBaseDir() . DS . 'app'
+                Mage::getBaseDir() . DS . 'app',
                 
                 // Custom hack to exclude vendor (see #)
-                Mage::getBaseDir() . DS . 'vendor'
+                Mage::getBaseDir() . DS . 'vendor',
                 Mage::getBaseDir() . DS . '..' . DS . 'vendor'
                 
             ]
